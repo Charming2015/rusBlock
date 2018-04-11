@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>俄罗斯方块</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="container topBox">
+		<h1 class="title">俄罗斯方块</h1>
+		<div class="ScoreBox">
+			<div class="recentScore">0</div>
+			<div class="bestScore">100</div>	
+		</div>
+	</div>
+	<div class="container midBox">
+		
+		<div class="ctrlBox">
+			<a href="javascript:newGame();" id="newGame">新游戏</a>
+			<a href="javascript:pause();" id="pause">暂停</a>
+		</div>
+		<p class="gameTips">是男人就玩9999分,<br>向上变形，向下加速，左右移动</p>
+	</div>
+	<div class="playBox" id="playBox"></div>
+
+	<div class="mask" style="display:none">
+		<span>暂停中...</span>
+	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/support.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
